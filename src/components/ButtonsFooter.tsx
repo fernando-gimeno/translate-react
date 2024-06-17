@@ -2,14 +2,20 @@ import { ButtonIcon } from "./";
 import soundIcon from "../assets/sound_max_fill.svg";
 import clipIcon from "../assets/Copy.svg";
 
-export const ButtonsFooter = () => {
+interface Props {
+  textToTranslate: string;
+}
+
+export const ButtonsFooter = ({ textToTranslate }: Props) => {
   const handleAudio = () => {
     console.log("Audio");
   };
 
   const handleCopyClipboard = () => {
-    console.log("CopyClipboard");
+    navigator.clipboard.writeText(textToTranslate);
   };
+
+  console.log(textToTranslate)
 
   return (
     <div className="flex gap-2 items-center">

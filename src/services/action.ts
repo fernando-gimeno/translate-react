@@ -1,4 +1,5 @@
 export const translate = async (text: string, targetLang: string) => {
+  if (!text) return;
   const response = await fetch(
     `https://api.mymemory.translated.net/get?q=${text}&langpair=${targetLang}`
   );

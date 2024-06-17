@@ -38,7 +38,7 @@ export const OutputCard = ({
           ></textarea>
         </div>
         <div className="flex justify-between items-center mt-3">
-          <ButtonsFooter />
+          <ButtonsFooter textToTranslate={translatedText} />
           
         </div>
       </form>

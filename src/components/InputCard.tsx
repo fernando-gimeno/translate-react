@@ -24,6 +24,7 @@ export const InputCard = ({
   onSubmit,
   isLoading,
 }: Props) => {
+  console.log(textToTranslate)
   return (
     <div
       className={`${className} rounded-xl h-80 p-7 flex flex-col gap-5 border border-graySecondary`}
@@ -47,7 +48,7 @@ export const InputCard = ({
           </span>
         </div>
         <div className="flex justify-between items-center mt-3">
-          <ButtonsFooter />
+          <ButtonsFooter textToTranslate={textToTranslate} />
           <button
             className={`bg-bluePrimary border-blueSecondary border flex px-5 py-2 rounded-lg items-center gap-2 text-sm font-bold disabled:bg-graySecondary disabled:border-graySecondary disabled:cursor-not-allowed transition-all duration-300 ease-in-out`}
             type="submit"
