@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+/// <reference types="node" />
+import { useState } from "react";
 import logo from "./assets/logo.svg";
 import { InputCard, OutputCard } from "./components";
 import { translate } from "./services/action";
@@ -28,16 +29,6 @@ export const App = () => {
     setTextToTranslate(event.target.value);
   };
 
-  useEffect(() => {
-    const fetchData = setTimeout(async () => {
-      const data = await translate(
-        textToTranslate,
-        `${langActive}|${targetLang}`
-      );
-      setTranslatedText(data.responseData.translatedText);
-    }, 2000);
-  }, [textToTranslate, langActive, targetLang]);
-
   return (
     <div className="h-screen text-white p-16 flex flex-col justify-center max-sm:p-7">
       <div className="container">
@@ -46,7 +37,7 @@ export const App = () => {
         </div>
 
         {/* Cards de traducción */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <InputCard
             langActive={langActive}
             setLangActive={setLangActive}

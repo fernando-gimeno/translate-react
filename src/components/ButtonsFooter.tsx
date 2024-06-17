@@ -15,7 +15,6 @@ export const ButtonsFooter = ({ textToTranslate }: Props) => {
     navigator.clipboard.writeText(textToTranslate);
   };
 
-  console.log(textToTranslate)
 
   return (
     <div className="flex gap-2 items-center">

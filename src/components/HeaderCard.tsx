@@ -25,7 +25,7 @@ export const HeaderCard = ({
   };
 
   return (
-    <div className="flex items-center gap-6 border-b pb-4 border-lightSecondary">
+    <div className="flex items-center gap-6 border-b py-2 border-lightSecondary overflow-x-auto overflow-y-hidden">
       {isResultTranslate ? (
         // Output Card
         <>
