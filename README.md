@@ -6,8 +6,6 @@ This project is a translation tool built with React. It allows users to easily t
 
 - User-friendly interface
 - Support for multiple languages
-- Real-time translation updates
-- Customizable translation settings
 
 ## Installation
 
