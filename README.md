@@ -17,7 +17,7 @@ This project is a translation tool built with React. It allows users to easily t
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/translate-react.git`
+1. Clone the repository: `git clone https://github.com/fernandouy/translate-react.git`
 2. Navigate to the project directory: `cd translate-react`
 3. Install dependencies: `yarn` or `npm install`
 
