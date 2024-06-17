@@ -7,6 +7,14 @@ This project is a translation tool built with React. It allows users to easily t
 - User-friendly interface
 - Support for multiple languages
 
+## Technologies Used
+
+- Node.js
+- Vite.js
+- React
+- Typescript
+- Tranlation API
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/translate-react.git`
