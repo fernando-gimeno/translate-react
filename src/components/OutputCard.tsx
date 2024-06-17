@@ -1,5 +1,4 @@
 import { ButtonsFooter, HeaderCard } from ".";
-import sortAlfa from "../assets/Sort_alfa.svg";
 
 interface Props {
   langActive: string;
